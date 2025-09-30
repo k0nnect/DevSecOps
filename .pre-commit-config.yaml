@@ -1,0 +1,9 @@
+repos:
+  - repo: https://github.com/PyCQA/bandit
+    rev: 1.7.9
+    hooks:
+      - id: bandit
+        args: ["-r", "."]
+        additional_dependencies: []  # keep empty unless u need extras
+
+  # (optional) add more hooks here, e.g., black/flake8/isort, etc.

@@ -12,5 +12,6 @@ COPY . .
 RUN useradd -m appuser && chown -R appuser /app
 USER appuser
 
+ENV HOST=0.0.0.0
 EXPOSE 5000
 CMD ["python", "app.py"]
